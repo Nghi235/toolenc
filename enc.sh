@@ -1,6 +1,7 @@
 #!/bin/bash
+read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link
 cd /
-git clone https://github.com/source235/enc.git
+git clone $link
 cd enc
 git clone https://github.com/Nghi235/encsh.git
 cd encsh
