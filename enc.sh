@@ -21,16 +21,16 @@ echo "                                                      Mã Hóa Shell Scrip
 rm -rf /enc.sh.x
 echo -e ""
 echo -e ""
-read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link
+read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link == "https://github.com/${user}/${floder}.git"
 cd /
 git clone $link
-cd enc
+cd $floder
 git clone https://github.com/Nghi235/encsh.git
 cd encsh
 make
-shc -v -r -U -f /enc/enc.sh
+shc -v -r -U -f /$floder/enc.sh
 cd ../../
-cp /enc/enc.sh.x /enc.sh.x
+cp /$floder/enc.sh.x /enc.sh.x
 rm -rf /enc
 clear
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
