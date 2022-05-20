@@ -19,6 +19,7 @@ echo "          ----------------------------------------------------------------
 echo -e ""
 echo "                                                      Mã Hóa Shell Script Phát Triển Bởi Nguyễn Nghị !"
 rm -rf /enc.sh.x
+rm -rf /encsh
 echo -e ""
 echo -e ""
 read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link
