@@ -9,5 +9,7 @@ shc -v -r -U -f /enc/enc.sh
 cd ../../root/
 cp /enc/enc.sh.x enc.sh.x
 rm -rf /enc
+clear
 echo "File Mã Hóa Của Bạn Là enc.sh.x"
+echo -e ""
 ls
