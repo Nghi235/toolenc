@@ -7,10 +7,11 @@ git clone https://github.com/Nghi235/encsh.git
 cd encsh
 make
 shc -v -r -U -f /enc/enc.sh
-cd ../../root/
-cp /enc/enc.sh.x enc.sh.x
+cd ../../
+cp /enc/enc.sh.x /enc.sh.x
 rm -rf /enc
 clear
-echo "File Mã Hóa Của Bạn Là enc.sh.x"
+echo "File Mã Hóa Của Bạn Là enc.sh.x | Đăng Nhập AA Panel Vào Mục File -> Root dir Tìm Và Tải File Về"
+echo -e ""
 echo -e ""
 ls
