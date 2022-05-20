@@ -1,4 +1,6 @@
 #!/bin/bash
+echo -e ""
+echo -e ""
 read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link
 cd /
 git clone $link
