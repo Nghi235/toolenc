@@ -22,7 +22,7 @@ rm -rf /enc.sh.x
 rm -rf /encsh
 echo -e ""
 echo -e ""
-read -p "Vui Lòng Nhập Link File Cần Mã Hóa (Tên File Phải Có Dạng enc.sh): " link
+read -p "Vui Lòng Nhập Link File Cần Mã Hóa ( Định Dạng https://github.com/.../enc.git ): " link
 cd /
 git clone $link
 cd enc
