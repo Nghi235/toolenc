@@ -22,17 +22,16 @@ rm -rf /enc.sh.x
 rm -rf /encsh
 echo -e ""
 echo -e ""
-read -p "Vui Lòng Nhập Link File Cần Mã Hóa ( Định Dạng https://github.com/.../enc.git ): " link
+read -p "Vui Lòng Nhập Link File Cần Mã Hóa ( Định Dạng https://raw.githubusercontent.com/.../enc.sh ): " link
 cd /
-git clone $link
-cd enc
 git clone https://github.com/Nghi235/encsh.git
 cd encsh
 make
-shc -v -r -U -f /enc/enc.sh
-cd ../../
-cp /enc/enc.sh.x /enc.sh.x
-rm -rf /enc
+curl -OL $link
+shc -v -r -U -f /encsh/enc.sh
+cd ..
+cp /encsh/enc.sh.x /enc.sh.x
+rm -rf encsh
 clear
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
